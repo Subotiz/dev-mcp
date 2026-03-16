@@ -1,4 +1,4 @@
-# Subotiz Dev MCP 工具列表 / Tool List
+# Subotiz MCP 工具列表 / Tool List
 
 本文档单独维护 MCP 工具列表，便于同步更新。更多接口与参数以 [Subotiz 开发者文档](https://developer.subotiz.com/docs) 为准。
 

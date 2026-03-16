@@ -1,6 +1,6 @@
 # Subotiz MCP
 
-Subotiz Dev MCP 是基于 [Model Context Protocol](https://spec.modelcontextprotocol.io/) 的开放工具集服务器。AI 代理可通过标准化 MCP 工具与 Subotiz 支付与订阅能力交互（客户、商品、定价、订阅、交易、退款、发票、Webhook 及开发者文档查询等）。
+Subotiz MCP 是基于 [Model Context Protocol](https://spec.modelcontextprotocol.io/) 的开放工具集服务器。AI 代理可通过标准化 MCP 工具与 Subotiz 支付与订阅能力交互（客户、商品、定价、订阅、交易、退款、发票、Webhook 及开发者文档查询等）。
 
 **了解更多**：了解 Subotiz 产品与能力，请访问 [官网首页](https://www.subotiz.com/)。
 
@@ -42,9 +42,9 @@ Subotiz Dev MCP 是基于 [Model Context Protocol](https://spec.modelcontextprot
 ---
 
 
-# Subotiz Dev MCP
+# Subotiz MCP
 
-Subotiz Dev MCP is an open toolset server based on the [Model Context Protocol](https://spec.modelcontextprotocol.io/). AI agents can interact with Subotiz payment and subscription capabilities through standardized MCP tools (customers, products, pricing, subscriptions, trades, refunds, invoices, webhooks, and developer documentation lookup).
+Subotiz MCP is an open toolset server based on the [Model Context Protocol](https://spec.modelcontextprotocol.io/). AI agents can interact with Subotiz payment and subscription capabilities through standardized MCP tools (customers, products, pricing, subscriptions, trades, refunds, invoices, webhooks, and developer documentation lookup).
 
 **Learn more**: For an overview of Subotiz products and capabilities, visit the [Subotiz homepage](https://www.subotiz.com/).
 
