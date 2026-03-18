@@ -9,6 +9,13 @@ Subotiz MCP 是基于 [Model Context Protocol](https://spec.modelcontextprotocol
 1. 支持 Streamable Http MCP 的宿主（如VS Code 1.101+、Claude Desktop、Cursor、Trae 等）
 2. 有效的 Subotiz 访问凭证（Token）
 
+## Subotiz MCP地址
+
+* stg环境：[http://api.stg.subotiz.com/mcp](http://api.stg.subotiz.com/mcp)
+* sandbox环境：[https://api.sandbox.subotiz.com/mcp](https://api.sandbox.subotiz.com/mcp)
+* prod环境：[https://api.subotiz.com/mcp](https://api.subotiz.com/mcp)
+
+
 ## 对外 MCP 配置
 
 连接官方托管服务时，只需配置 URL 与 `Authorization: Bearer`，**无需其他请求头**。
@@ -19,16 +26,16 @@ Subotiz MCP 是基于 [Model Context Protocol](https://spec.modelcontextprotocol
 {
   "mcpServers": {
     "my-remote-server": {
-      "url": "https://api.subotiz.com/mcp",
+      "url": "{{MCP_URL}}",
       "headers": {
-        "Authorization": "Bearer YOUR_TOKEN_HERE"
+        "Authorization": "Bearer {{YOUR_TOKEN_HERE}}"
       }
     }
   }
 }
 ```
 
-将 `YOUR_TOKEN_HERE` 替换为你的 Subotiz 访问 Token 即可。在 VS Code、Cursor、Claude Desktop 等宿主中，把上述内容合并到各自的 MCP 配置（如 `servers` 或 `mcpServers`）中即可使用。
+将 `{{MCP_URL}}`替换为你所需要使用环境的MCP地址，将 `{{YOUR_TOKEN_HERE}}` 替换为你的 Subotiz 访问 Token 即可。在 VS Code、Cursor、Claude Desktop 等宿主中，把上述内容合并到各自的 MCP 配置（如 `servers` 或 `mcpServers`）中即可使用。
 
 **API Key 获取**：配置中的 Token 即 Subotiz API Key。获取步骤与认证方式请参阅 [认证文档](https://developer.subotiz.com/v1.0-zh-cn/reference/authentication-1)。
 
@@ -53,6 +60,12 @@ Subotiz MCP is an open toolset server based on the [Model Context Protocol](http
 1. A host that supports Streamable HTTP MCP (e.g. VS Code 1.101+, Claude Desktop, Cursor, Trae, etc.)
 2. A valid Subotiz access token
 
+## Subotiz MCP URL
+
+* stg: [http://api.stg.subotiz.com/mcp](http://api.stg.subotiz.com/mcp)
+* sandbox: [https://api.sandbox.subotiz.com/mcp](https://api.sandbox.subotiz.com/mcp)
+* prod: [https://api.subotiz.com/mcp](https://api.subotiz.com/mcp)
+
 ## MCP Configuration
 
 When connecting to the official hosted service, you only need to configure the URL and `Authorization: Bearer`; **no other request headers are required**.
@@ -63,16 +76,16 @@ When connecting to the official hosted service, you only need to configure the U
 {
   "mcpServers": {
     "my-remote-server": {
-      "url": "https://api.subotiz.com/mcp",
+      "url": "{{MCP_URL}}",
       "headers": {
-        "Authorization": "Bearer YOUR_TOKEN_HERE"
+        "Authorization": "Bearer {{YOUR_TOKEN_HERE}}"
       }
     }
   }
 }
 ```
 
-Replace `YOUR_TOKEN_HERE` with your Subotiz access token. In hosts such as VS Code, Cursor, or Claude Desktop, merge the above into their respective MCP configuration (e.g. `servers` or `mcpServers`) to use it.
+Replace `{{MCP_URL}}` with the MCP URL for your target environment and `{{YOUR_TOKEN_HERE}}` with your Subotiz access token. In hosts such as VS Code, Cursor, or Claude Desktop, merge the above into their respective MCP configuration (e.g. `servers` or `mcpServers`) to use it.
 
 **Obtaining an API Key**: The token in the configuration is your Subotiz API Key. For steps to create one and authentication details, see the [Authentication guide](https://developer.subotiz.com/v1.0-zh-cn/reference/authentication-1).
 
